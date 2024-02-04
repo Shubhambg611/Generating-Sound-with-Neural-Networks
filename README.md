@@ -1,3 +1,6 @@
+
+### Semester 6 Academic Project 
+
 <B>Project Overview</b><BR>
 Welcome to our Music Generation project! This project utilizes deep learning techniques to generate music compositions. The goal is to create unique and harmonious pieces of music by training a neural network on a dataset of musical patterns.<BR>
 

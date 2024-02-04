@@ -1,8 +1,5 @@
 class Autoencoder:
-    """
-    Autoencoder represents a Deep Convolutional autoencoder architecture with
-    mirrored encoder and decoder components.
-    """
+
 
     def __init__(self,
                  input_shape,

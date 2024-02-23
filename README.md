@@ -1,17 +1,27 @@
+# MusicGenerator
 
-### Semester 6 Academic Project 
+## Overview
 
-<B>Project Overview</b><BR>
-Welcome to our Music Generation project! This project utilizes deep learning techniques to generate music compositions. The goal is to create unique and harmonious pieces of music by training a neural network on a dataset of musical patterns.<BR>
+This is the code for [this](https://www.youtube.com/watch?v=pg9apmwf7og) video on Youtube by Siraj Raval as part of the Deep Learning Nanodegree course with Udacity. We're going to use an encoder-decoder model to generate a MIDI sequence given an input sequence of MIDI ragtime songs.
 
-<b>Features</b><BR>
-Deep Learning Model: We employ a deep neural network architecture to learn the patterns and structures present in the input musical data.<br>
+## Dependencies
 
-Dataset: The model is trained on a diverse dataset of musical compositions, allowing it to capture a wide range of musical styles and genres.<BR>
+The program requires the following dependencies (easy to install using pip):
+ * Python 3
+ * TensorFlow (tested with v0.10.0rc0. Won't work with previous versions)
+ * CUDA (for using gpu, see TensorFlow [installation page](https://www.tensorflow.org/versions/master/get_started/os_setup.html#optional-install-cuda-gpus-on-linux) for more details)
+ * Numpy (should be installed with TensorFlow)
+ * Mido (midi library)
+ * Tqdm (for the nice progression bars)
+ * OpenCv (Sorry, there is no simple way to install it with python 3. It's primarily used as visualisation tool to print the piano roll so is quite optional. All OpenCv calls are contained inside the imgconnector file so if you want to use test the program without OpenCv, you can try removing the functions inside the file)
+
+## Usage
+
+To train the model, simply run `main.py`. Once trained, you can generate the results with `main.py --test --sample_length 500`. For more help and options, use `python main.py -h`.
+
+To visualize the computational graph and the cost with TensorBoard, run `tensorboard --logdir save/`.
 
 
-<b>Contributing:</b><BR>
-03: Akanksha Brage<br>
-15: Abhishek Dongre<br>
-17: Shubham Gadhave<br>
-68: Siddhi Shilkar<br>
+## Credits
+
+Credits for the code go to [Conchylicultor](https://github.com/Conchylicultor/MusicGenerator). I've merely created a wrapper to get people started.

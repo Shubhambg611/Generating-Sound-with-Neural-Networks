@@ -11,7 +11,7 @@ Dataset: The model is trained on a diverse dataset of musical compositions, allo
 
 
 <b>Contributing:</b><BR>
-3: Akanksha Brage<br>
+03: Akanksha Brage<br>
 15: Abhishek Dongre<br>
 17: Shubham Gadhave<br>
- Sidhi Shilkar<br>
+68: Siddhi Shilkar<br>
